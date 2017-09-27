@@ -1,5 +1,8 @@
 #pragma once
 #include <windows.h>
+#include "cameraclass.h"
+#include "modelclass.h"
+#include "colorshaderclass.h"
 class D3DClass;
 
 const bool FULL_SCREEN = false;
@@ -22,6 +25,9 @@ private:
 
 private:
 	D3DClass* m_D3D;
+	CameraClass* m_Camera;
+	ModelClass* m_Model;
+	ColorShaderClass* m_ColorShader;
 
 };
 
